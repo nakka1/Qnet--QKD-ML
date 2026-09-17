@@ -1,0 +1,18 @@
+[main] comissionamento: mu 0.367  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[main] [  10/150] treino  1.102 Mbit/s  validação  1.250 Mbit/s  entropia 2.161
+[main] [  20/150] treino  1.702 Mbit/s  validação  1.620 Mbit/s  entropia 2.097
+[main] [  30/150] treino  1.730 Mbit/s  validação  1.798 Mbit/s  entropia 2.018
+[main] [  40/150] treino  2.042 Mbit/s  validação  1.777 Mbit/s  entropia 1.925
+[main] [  50/150] treino  1.762 Mbit/s  validação  1.768 Mbit/s  entropia 1.760
+[main] [  60/150] treino  1.715 Mbit/s  validação  1.819 Mbit/s  entropia 1.659
+[main] [  70/150] treino  2.004 Mbit/s  validação  1.905 Mbit/s  entropia 1.719
+[main] [  80/150] treino  1.893 Mbit/s  validação  1.970 Mbit/s  entropia 1.648
+[main] [  90/150] treino  2.041 Mbit/s  validação  2.009 Mbit/s  entropia 1.690
+[main] [ 100/150] treino  2.043 Mbit/s  validação  1.967 Mbit/s  entropia 1.678
+[main] [ 110/150] treino  1.946 Mbit/s  validação  1.975 Mbit/s  entropia 1.768
+[main] [ 120/150] treino  1.989 Mbit/s  validação  2.007 Mbit/s  entropia 1.701
+[main] [ 130/150] treino  2.099 Mbit/s  validação  2.029 Mbit/s  entropia 1.722
+[main] [ 140/150] treino  2.040 Mbit/s  validação  2.062 Mbit/s  entropia 1.711
+[main] [ 150/150] treino  1.892 Mbit/s  validação  2.030 Mbit/s  entropia 1.702
+[main] teste: agente 2.060 Mbit/s  estático 1.899 Mbit/s  (+8.5%)
+[main] salvo em runs/keyrate

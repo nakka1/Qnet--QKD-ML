@@ -1,0 +1,11 @@
+# Runtime dependencies of qnet_autopilot itself.
+#
+# SeQUeNCe is the substrate; it pulls in qutip, qutip-qip, gmpy2 and stim,
+# which is why `qnet_autopilot.compat` exists for environments that cannot
+# install them. On a normal machine you need nothing but this file.
+sequence>=1.0.0     # https://github.com/sequence-toolbox/SeQUeNCe
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+networkx>=3.0
+matplotlib>=3.7     # validation report figures only

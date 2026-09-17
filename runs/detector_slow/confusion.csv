@@ -1,0 +1,7 @@
+,detector_blinding,intercept_resend,loss_event,normal,pns,thermal_drift
+detector_blinding,868,0,0,0,0,183
+intercept_resend,177,124,0,350,85,654
+loss_event,0,0,1163,0,0,0
+normal,36,518,0,6231,20,0
+pns,0,104,0,3,881,78
+thermal_drift,0,0,0,0,0,1485

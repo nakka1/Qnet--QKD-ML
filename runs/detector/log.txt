@@ -1,0 +1,104 @@
+[detector] dataset lido de runs/detector2/sessions.csv: 100800 linhas
+[detector] 90720 períodos, 17 atributos; 64260 treino / 26460 teste
+[detector] 44280 linhas de ajuste / 10800 de calibração
+[detector] limiar calibrado em sigma = 97.16
+[detector] limiar de decisão em P(ataque) >= 1.000 para 0.5% de alarme falso
+
+limiar de QBER: 22680 periods, false alarm 0.0073 (1.6/h), precisão a 1% 0.103, macro F1 0.128
+  detector_blinding    recall 0.000  detected 0.112  delay inf s
+  intercept_resend     recall 0.000  detected 0.273  delay inf s
+  loss_event           recall 0.000  detected 0.029  delay inf s
+  normal               recall 0.993  detected 0.993  delay nan s
+  pns                  recall 0.000  detected 0.040  delay inf s
+  thermal_drift        recall 0.000  detected 0.001  delay inf s
+
+random forest: 22680 periods, false alarm 0.0525 (8.9/h), precisão a 1% 0.155, macro F1 0.832
+  detector_blinding    recall 0.840  detected 0.840  delay 1 s
+  intercept_resend     recall 0.636  detected 0.977  delay 0 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.948  detected 0.948  delay nan s
+  pns                  recall 0.749  detected 0.932  delay 1 s
+  thermal_drift        recall 0.864  detected 0.998  delay 1 s
+
+SVM (RBF): 22680 periods, false alarm 0.0761 (36.4/h), precisão a 1% 0.113, macro F1 0.702
+  detector_blinding    recall 0.831  detected 0.844  delay 1 s
+  intercept_resend     recall 0.602  detected 0.991  delay 0 s
+  loss_event           recall 0.950  detected 1.000  delay 0 s
+  normal               recall 0.924  detected 0.924  delay nan s
+  pns                  recall 0.416  detected 0.946  delay 1 s
+  thermal_drift        recall 0.651  detected 1.000  delay 0 s
+
+gradient boosting: 22680 periods, false alarm 0.0618 (14.9/h), precisão a 1% 0.135, macro F1 0.830
+  detector_blinding    recall 0.908  detected 0.908  delay 1 s
+  intercept_resend     recall 0.597  detected 0.929  delay 0 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.938  detected 0.938  delay nan s
+  pns                  recall 0.745  detected 0.937  delay 1 s
+  thermal_drift        recall 0.875  detected 1.000  delay 0 s
+
+gradient boosting + limiar: 22680 periods, false alarm 0.0373 (11.0/h), precisão a 1% 0.200, macro F1 0.825
+  detector_blinding    recall 0.830  detected 0.830  delay 1 s
+  intercept_resend     recall 0.533  detected 0.856  delay 1 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.963  detected 0.963  delay nan s
+  pns                  recall 0.731  detected 0.918  delay 1 s
+  thermal_drift        recall 0.874  detected 0.999  delay 1 s
+
+boosting + limiar + histerese: 22680 periods, false alarm 0.0321 (6.8/h), precisão a 1% 0.220, macro F1 0.818
+  detector_blinding    recall 0.792  detected 0.792  delay 3 s
+  intercept_resend     recall 0.513  detected 0.816  delay 3 s
+  loss_event           recall 0.992  detected 0.992  delay 2 s
+  normal               recall 0.968  detected 0.968  delay nan s
+  pns                  recall 0.709  detected 0.881  delay 3 s
+  thermal_drift        recall 0.863  detected 0.977  delay 3 s
+
+casos difíceis (só períodos com ataque em curso):
+  gradient boosting            degrau                 recall 0.944  detectado 0.994
+  gradient boosting            rampa                  recall 0.778  detectado 0.970
+  gradient boosting            intermitente           recall 0.562  detectado 0.834
+  gradient boosting            com excursão térmica   recall 0.631  detectado 1.000
+  gradient boosting            sem excursão térmica   recall 0.897  detectado 0.935
+  gradient boosting + limiar   degrau                 recall 0.938  detectado 0.985
+  gradient boosting + limiar   rampa                  recall 0.748  detectado 0.940
+  gradient boosting + limiar   intermitente           recall 0.484  detectado 0.748
+  gradient boosting + limiar   com excursão térmica   recall 0.631  detectado 1.000
+  gradient boosting + limiar   sem excursão térmica   recall 0.857  detectado 0.890
+  boosting + limiar + histerese degrau                 recall 0.926  detectado 0.968
+  boosting + limiar + histerese rampa                  recall 0.729  detectado 0.909
+  boosting + limiar + histerese intermitente           recall 0.444  detectado 0.689
+  boosting + limiar + histerese com excursão térmica   recall 0.614  detectado 0.959
+  boosting + limiar + histerese sem excursão térmica   recall 0.836  detectado 0.866
+
+divisor de feixe (sem assinatura física — 'normal' é a resposta certa):
+  limiar de QBER       normal 1.000  ataque 0.000
+  random forest        normal 0.914  ataque 0.086
+  SVM (RBF)            normal 0.830  ataque 0.170
+  gradient boosting    normal 0.905  ataque 0.095
+  gradient boosting + limiar normal 0.914  ataque 0.086
+  boosting + limiar + histerese normal 0.914  ataque 0.086
+
+random forest (sem termômetro): 22680 periods, false alarm 0.1293 (80.7/h), precisão a 1% 0.062, macro F1 0.768
+  detector_blinding    recall 0.973  detected 0.974  delay 1 s
+  intercept_resend     recall 0.536  detected 0.938  delay 1 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.871  detected 0.871  delay nan s
+  pns                  recall 0.753  detected 0.838  delay 1 s
+  thermal_drift        recall 0.425  detected 0.507  delay 23 s
+
+random forest (sem decoy): 22680 periods, false alarm 0.0498 (12.3/h), precisão a 1% 0.158, macro F1 0.770
+  detector_blinding    recall 0.861  detected 0.861  delay 0 s
+  intercept_resend     recall 0.620  detected 0.983  delay 0 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.950  detected 0.950  delay nan s
+  pns                  recall 0.400  detected 0.842  delay 1 s
+  thermal_drift        recall 0.881  detected 0.998  delay 1 s
+
+random forest (só QBER e ganho): 22680 periods, false alarm 0.1613 (104.3/h), precisão a 1% 0.040, macro F1 0.622
+  detector_blinding    recall 0.826  detected 0.874  delay 1 s
+  intercept_resend     recall 0.542  detected 0.940  delay 1 s
+  loss_event           recall 1.000  detected 1.000  delay 0 s
+  normal               recall 0.839  detected 0.839  delay nan s
+  pns                  recall 0.098  detected 0.273  delay 132 s
+  thermal_drift        recall 0.390  detected 0.541  delay 17 s
+
+[detector] salvo em runs/detector2

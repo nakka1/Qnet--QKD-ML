@@ -1,0 +1,32 @@
+[generalist2] comissionamento 25 km: mu 0.269  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist2] comissionamento 35 km: mu 0.294  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist2] comissionamento 50 km: mu 0.367  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist2] comissionamento 65 km: mu 0.391  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist2] comissionamento 80 km: mu 0.537  nu 0.100  clock 0.94 GHz  p_sinal 0.70
+[generalist2] [  10/200] treino  1.050 Mbit/s  validação  1.139 Mbit/s  entropia 2.166
+[generalist2] [  20/200] treino  1.658 Mbit/s  validação  1.386 Mbit/s  entropia 2.156
+[generalist2] [  30/200] treino  1.291 Mbit/s  validação  1.838 Mbit/s  entropia 2.106
+[generalist2] [  40/200] treino  2.494 Mbit/s  validação  2.089 Mbit/s  entropia 1.969
+[generalist2] [  50/200] treino  1.104 Mbit/s  validação  2.210 Mbit/s  entropia 1.974
+[generalist2] [  60/200] treino  1.728 Mbit/s  validação  2.155 Mbit/s  entropia 1.892
+[generalist2] [  70/200] treino  1.606 Mbit/s  validação  2.099 Mbit/s  entropia 1.783
+[generalist2] [  80/200] treino  1.517 Mbit/s  validação  2.046 Mbit/s  entropia 1.869
+[generalist2] [  90/200] treino  1.913 Mbit/s  validação  2.174 Mbit/s  entropia 1.897
+[generalist2] [ 100/200] treino  1.772 Mbit/s  validação  2.204 Mbit/s  entropia 1.893
+[generalist2] [ 110/200] treino  1.550 Mbit/s  validação  2.203 Mbit/s  entropia 1.873
+[generalist2] [ 120/200] treino  2.050 Mbit/s  validação  2.202 Mbit/s  entropia 1.829
+[generalist2] [ 130/200] treino  2.517 Mbit/s  validação  2.328 Mbit/s  entropia 1.866
+[generalist2] [ 140/200] treino  1.855 Mbit/s  validação  2.268 Mbit/s  entropia 1.873
+[generalist2] [ 150/200] treino  1.514 Mbit/s  validação  2.239 Mbit/s  entropia 1.867
+[generalist2] [ 160/200] treino  2.068 Mbit/s  validação  2.345 Mbit/s  entropia 1.853
+[generalist2] [ 170/200] treino  1.745 Mbit/s  validação  2.254 Mbit/s  entropia 1.854
+[generalist2] [ 180/200] treino  2.957 Mbit/s  validação  2.298 Mbit/s  entropia 1.793
+[generalist2] [ 190/200] treino  2.597 Mbit/s  validação  2.314 Mbit/s  entropia 1.818
+[generalist2] [ 200/200] treino  1.681 Mbit/s  validação  2.324 Mbit/s  entropia 1.854
+[generalist2] teste 25 km: agente 3.656 Mbit/s  estático 3.180 Mbit/s  (+15.0%)
+[generalist2] teste 35 km: agente 3.055 Mbit/s  estático 2.732 Mbit/s  (+11.9%)
+[generalist2] teste 50 km: agente 2.097 Mbit/s  estático 1.899 Mbit/s  (+10.5%)
+[generalist2] teste 65 km: agente 1.098 Mbit/s  estático 1.038 Mbit/s  (+5.8%)
+[generalist2] teste 80 km: agente 0.497 Mbit/s  estático 0.489 Mbit/s  (+1.6%)
+[generalist2] teste (todos os vãos): agente 2.081 Mbit/s  estático 1.868 Mbit/s  (+11.4%)
+[generalist2] salvo em runs/keyrate

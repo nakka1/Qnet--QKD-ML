@@ -1,0 +1,16 @@
+detector,case,periods,recall,detected
+gradient boosting,degrau,4449,0.9440323668240054,0.9939312204989885
+gradient boosting,rampa,2678,0.7781926811053025,0.9701269604182226
+gradient boosting,intermitente,1811,0.5621203754831585,0.8337934842628382
+gradient boosting,com excursão térmica,2685,0.6312849162011173,1.0
+gradient boosting,sem excursão térmica,6253,0.8966895889972814,0.934751319366704
+gradient boosting + limiar,degrau,4449,0.9379635873229939,0.984715666441897
+gradient boosting + limiar,rampa,2678,0.7475728155339806,0.9395070948469006
+gradient boosting + limiar,intermitente,1811,0.4842628382109332,0.748205411374931
+gradient boosting + limiar,com excursão térmica,2685,0.6312849162011173,1.0
+gradient boosting + limiar,sem excursão térmica,6253,0.8567087797857028,0.8902926595234287
+boosting + limiar + histerese,degrau,4449,0.925826028320971,0.9683074848280513
+boosting + limiar + histerese,rampa,2678,0.7289021657953697,0.9088872292755787
+boosting + limiar + histerese,intermitente,1811,0.4439536167863059,0.6891220320265047
+boosting + limiar + histerese,com excursão térmica,2685,0.6141527001862197,0.9590316573556797
+boosting + limiar + histerese,sem excursão térmica,6253,0.8357588357588358,0.8659843275227891

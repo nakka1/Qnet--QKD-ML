@@ -1,0 +1,8 @@
+== varredura de arquitetura ==
+  MLP                          MSE   3437.9
+  TCN c32 d(1, 2) campo  7  MSE   7034.5
+  TCN c32 d(1, 2, 4) campo 15  MSE   3583.3
+  TCN c48 d(1, 2, 4) campo 15  MSE   3586.4
+  TCN c64 d(1, 2, 4) campo 15  MSE   3592.1
+
+salvo em runs/phase5

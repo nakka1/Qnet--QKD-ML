@@ -1,0 +1,31 @@
+{
+  "episodes_per_class": 24,
+  "duration_s": 600.0,
+  "residual_fraction": 0.2,
+  "threshold_sigma": 97.15752200912328,
+  "adversarial": true,
+  "sustain": 3,
+  "false_alarm_target": 0.005,
+  "attack_threshold": 0.9997181057361344,
+  "feature_names": [
+    "log_signal_gain_ratio",
+    "log_decoy_gain_ratio",
+    "decoy_to_signal_shift",
+    "signal_error_shift",
+    "decoy_error_shift",
+    "log_vacuum_gain_ratio",
+    "vacuum_error_shift",
+    "log_single_photon_yield_ratio",
+    "single_photon_error_shift",
+    "log_key_rate_ratio",
+    "log_gain_versus_calibration",
+    "temperature_shift",
+    "temperature_rate",
+    "error_temperature_correlation",
+    "error_trend",
+    "gain_trend",
+    "error_volatility"
+  ],
+  "window": 30,
+  "baseline_periods": 60
+}

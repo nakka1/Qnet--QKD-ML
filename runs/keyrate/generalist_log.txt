@@ -1,0 +1,30 @@
+[generalist] comissionamento 25 km: mu 0.269  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist] comissionamento 35 km: mu 0.294  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist] comissionamento 50 km: mu 0.367  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist] comissionamento 65 km: mu 0.391  nu 0.100  clock 1.64 GHz  p_sinal 0.70
+[generalist] comissionamento 80 km: mu 0.537  nu 0.100  clock 0.94 GHz  p_sinal 0.70
+[generalist] [  10/180] treino  1.270 Mbit/s  validação  1.235 Mbit/s  entropia 2.174
+[generalist] [  20/180] treino  1.677 Mbit/s  validação  1.706 Mbit/s  entropia 2.129
+[generalist] [  30/180] treino  1.262 Mbit/s  validação  1.852 Mbit/s  entropia 2.051
+[generalist] [  40/180] treino  2.370 Mbit/s  validação  1.965 Mbit/s  entropia 2.045
+[generalist] [  50/180] treino  1.105 Mbit/s  validação  2.005 Mbit/s  entropia 2.007
+[generalist] [  60/180] treino  1.711 Mbit/s  validação  2.092 Mbit/s  entropia 1.886
+[generalist] [  70/180] treino  1.769 Mbit/s  validação  1.954 Mbit/s  entropia 1.842
+[generalist] [  80/180] treino  1.614 Mbit/s  validação  2.176 Mbit/s  entropia 1.775
+[generalist] [  90/180] treino  1.835 Mbit/s  validação  2.292 Mbit/s  entropia 1.747
+[generalist] [ 100/180] treino  1.769 Mbit/s  validação  2.310 Mbit/s  entropia 1.802
+[generalist] [ 110/180] treino  1.534 Mbit/s  validação  2.235 Mbit/s  entropia 1.798
+[generalist] [ 120/180] treino  2.048 Mbit/s  validação  2.209 Mbit/s  entropia 1.712
+[generalist] [ 130/180] treino  2.529 Mbit/s  validação  2.244 Mbit/s  entropia 1.732
+[generalist] [ 140/180] treino  1.903 Mbit/s  validação  2.175 Mbit/s  entropia 1.805
+[generalist] [ 150/180] treino  1.431 Mbit/s  validação  2.183 Mbit/s  entropia 1.838
+[generalist] [ 160/180] treino  2.065 Mbit/s  validação  2.277 Mbit/s  entropia 1.788
+[generalist] [ 170/180] treino  1.836 Mbit/s  validação  2.206 Mbit/s  entropia 1.795
+[generalist] [ 180/180] treino  3.054 Mbit/s  validação  2.266 Mbit/s  entropia 1.671
+[generalist] teste 25 km: agente 3.769 Mbit/s  estático 3.180 Mbit/s  (+18.5%)
+[generalist] teste 35 km: agente 3.001 Mbit/s  estático 2.732 Mbit/s  (+9.9%)
+[generalist] teste 50 km: agente 2.078 Mbit/s  estático 1.899 Mbit/s  (+9.5%)
+[generalist] teste 65 km: agente 1.054 Mbit/s  estático 1.038 Mbit/s  (+1.5%)
+[generalist] teste 80 km: agente 0.460 Mbit/s  estático 0.489 Mbit/s  (-6.0%)
+[generalist] teste (todos os vãos): agente 2.073 Mbit/s  estático 1.868 Mbit/s  (+11.0%)
+[generalist] salvo em runs/keyrate

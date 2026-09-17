@@ -1,0 +1,86 @@
+{
+  "name": "qkd_sessions",
+  "description": "One row per settling period of a decoy-state BB84 link: the observables the two ends publish, the operator's thermometer, and the event class that was running. Columns prefixed true_ are for evaluation only.",
+  "parameters": {
+    "episodes_per_class": 12,
+    "duration_s": 3000.0,
+    "period_s": 5.0,
+    "baseline_periods": 60,
+    "lengths_km": [
+      20.0,
+      35.0,
+      50.0,
+      70.0
+    ],
+    "labels": [
+      "normal",
+      "thermal_drift",
+      "loss_event",
+      "intercept_resend",
+      "pns",
+      "detector_blinding",
+      "beam_splitting"
+    ],
+    "residual_fraction": 0.2,
+    "adversarial": true,
+    "settings": {
+      "signal_intensity": 0.5,
+      "decoy_intensity": 0.1,
+      "vacuum_probability": 0.1,
+      "signal_probability": 0.7,
+      "clock_rate_hz": 1000000000.0,
+      "sifting_factor": 0.5
+    },
+    "link": {
+      "length_km": 50.0,
+      "attenuation_db_per_km": 0.2,
+      "coupling_efficiency": 0.85,
+      "detector_efficiency": 0.7,
+      "excess_loss_db": 1.0,
+      "dark_count_rate_hz": 10.0,
+      "gate_width_s": 5e-10,
+      "detectors": 2,
+      "misalignment_error": 0.015
+    }
+  },
+  "seed": 0,
+  "columns": {
+    "episode": "episode index",
+    "time_s": "seconds since the start of the episode",
+    "period": "settling period index",
+    "label": "event class, the classification target",
+    "onset_s": "when the event started; NaN for an event-free episode",
+    "active": "1 while the event is actually running, 0 before and between bursts",
+    "strength": "severity in force this period, 0 to 1 (ramped and intermittent events)",
+    "signal_gain": "clicks per signal pulse, Q_mu",
+    "decoy_gain": "clicks per weak-decoy pulse, Q_nu",
+    "vacuum_gain": "clicks per empty pulse, Y_0",
+    "signal_error": "error rate among signal clicks, E_mu",
+    "decoy_error": "error rate among decoy clicks, E_nu",
+    "vacuum_error": "error rate among vacuum clicks",
+    "signal_intensity": "mean photon number of the signal state",
+    "decoy_intensity": "mean photon number of the weak decoy state",
+    "single_photon_yield_lower": "Y_1 lower bound from the decoy analysis",
+    "single_photon_error_upper": "e_1 upper bound from the decoy analysis",
+    "key_rate_hz": "secret key rate implied by this period's observables",
+    "temperature_c": "cable temperature, from the operator's sensor",
+    "expected_gain": "signal gain the commissioning calibration predicts",
+    "pulses": "pulses sent in this period",
+    "true_misalignment": "optical misalignment actually in force (not a feature)",
+    "true_transmittance": "channel transmittance actually in force (not a feature)",
+    "true_single_photon_yield": "Y_1 actually in force (not a feature)",
+    "length_km": "span length of this episode",
+    "severity": "the drawn magnitude of the event, in its own units",
+    "profile": "how the event arrives: step, ramp or intermittent",
+    "thermal_cooccurrence": "kelvin of simultaneous temperature excursion; 0 if none"
+  },
+  "created_utc": "2026-09-14T12:35:55.611290+00:00",
+  "software": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "sequence": "1.2.0",
+    "sequence_shimmed_deps": "gmpy2,qutip,qutip_qip"
+  },
+  "row_count": 50400
+}

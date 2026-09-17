@@ -1,0 +1,21 @@
+== taxa de chave ==
+
+temperatura de amostragem (validação, Mbit/s)
+length_km       25.0     35.0     50.0     65.0     80.0
+temperature                                             
+0.00           3.659    3.074    2.098    1.161    0.586
+0.25           3.782    3.121    2.132    1.218    0.516
+0.50           3.686    3.043    2.133    1.188    0.528
+1.00           3.605    3.007    2.147    1.060    0.507
+escolhida: 0.25
+
+taxa de chave (média de episódios de teste, temperatura 0.25, Mbit/s)
+policy      agente  estático  oráculo  agente vs estático  fração do oráculo
+length_km                                                                   
+25.0         3.782     3.180    3.817               0.189              0.944
+35.0         3.092     2.732    3.059               0.132              1.100
+50.0         2.128     1.899    2.152               0.121              0.907
+65.0         1.138     1.038    1.220               0.096              0.550
+80.0         0.532     0.489    0.713               0.088              0.192
+
+salvo em runs/phase5
